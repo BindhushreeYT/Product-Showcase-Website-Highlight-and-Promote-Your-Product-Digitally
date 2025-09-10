@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Showcase — NovaBrew</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a2d9d6b8d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="logo" href="#">NovaBrew</a>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#specs">Specs</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="cta small" id="buyTop">Buy Now</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>NovaBrew — Smart Portable Coffee Maker</h1>
+          <p class="tagline">Perfect coffee, on-demand. Compact, connected, and crafted for taste.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#pricing">Buy Now</a>
+            <a class="btn ghost" href="#specs">Learn More</a>
+          </div>
+
+          <ul class="hero-bullets">
+            <li><strong>20s brew</strong> from bean to cup</li>
+            <li><strong>Bluetooth</strong> app control</li>
+            <li><strong>Eco-friendly</strong> reusable filter</li>
+          </ul>
+        </div>
+
+        <div class="hero-media">
+          <div class="carousel" id="carousel">
+            <div class="slides">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop" alt="Coffee product 1">
+              <img src="https://images.unsplash.com/photo-1510627498534-cf7e9002facc?q=80&w=1200&auto=format&fit=crop" alt="Coffee product 2">
+              <img src="https://images.unsplash.com/photo-1506224779391-860b7a7b5d86?q=80&w=1200&auto=format&fit=crop" alt="Coffee product 3">
+            </div>
+            <div class="carousel-nav">
+              <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+              <button class="dot" data-index="1" aria-label="Slide 2"></button>
+              <button class="dot" data-index="2" aria-label="Slide 3"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section features container">
+      <h2>Top Features</h2>
+      <div class="features-grid">
+        <article class="feature">
+          <i class="fa-solid fa-bolt icon"></i>
+          <h3>Fast Brew</h3>
+          <p>Advanced heating system delivers a full-flavour cup in ~20 seconds.</p>
+        </article>
+        <article class="feature">
+          <i class="fa-solid fa-mobile-screen-button icon"></i>
+          <h3>App Control</h3>
+          <p>Schedule brews, change strength and monitor water level through the mobile app.</p>
+        </article>
+        <article class="feature">
+          <i class="fa-solid fa-leaf icon"></i>
+          <h3>Sustainable</h3>
+          <p>Reusable filter and energy saving modes reduce waste and power usage.</p>
+        </article>
+        <article class="feature">
+          <i class="fa-solid fa-gear icon"></i>
+          <h3>Custom Strength</h3>
+          <p>Choose from mild to intense with 5 strength presets.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section pricing container">
+      <h2>Pricing Plans</h2>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Starter</h3>
+          <p class="price">₹4,499</p>
+          <ul>
+            <li>Single unit</li>
+            <li>1-year warranty</li>
+            <li>Basic app features</li>
+          </ul>
+          <button class="btn primary">Buy — ₹4,499</button>
+        </div>
+
+        <div class="price-card featured">
+          <span class="badge">Best Value</span>
+          <h3>Combo</h3>
+          <p class="price">₹7,999</p>
+          <ul>
+            <li>2 units + travel case</li>
+            <li>2-year warranty</li>
+            <li>Premium app features</li>
+          </ul>
+          <button class="btn primary">Buy — ₹7,999</button>
+        </div>
+
+        <div class="price-card">
+          <h3>Pro</h3>
+          <p class="price">₹12,499</p>
+          <ul>
+            <li>Bundle with beans</li>
+            <li>3-year warranty</li>
+            <li>Exclusive accessories</li>
+          </ul>
+          <button class="btn primary">Buy — ₹12,499</button>
+        </div>
+      </div>
+      <p class="pricing-note">Use code <strong>NOVA10</strong> for 10% off—limited time offer.</p>
+    </section>
+
+    <!-- SPECS -->
+    <section id="specs" class="section specs container">
+      <h2>Specifications & Description</h2>
+      <div class="specs-grid">
+        <div>
+          <h3>Product Details</h3>
+          <p>NovaBrew is a compact portable coffee maker designed for travelers, commuters, and small-space living. It supports ground coffee and a reusable mesh filter.</p>
+          <ul>
+            <li>Dimensions: 220 × 85 × 85 mm</li>
+            <li>Weight: 900 g</li>
+            <li>Battery: 4000 mAh (10 brews per charge)</li>
+            <li>Connectivity: Bluetooth 5.2</li>
+          </ul>
+        </div>
+        <div class="variants">
+          <h3>Variants</h3>
+          <div class="variant-controls">
+            <label class="variant"><input type="radio" name="color" value="black" checked> Black</label>
+            <label class="variant"><input type="radio" name="color" value="white"> White</label>
+            <label class="variant"><input type="radio" name="color" value="green"> Olive</label>
+          </div>
+          <h4>What's in the box</h4>
+          <ul>
+            <li>NovaBrew unit</li>
+            <li>USB-C charging cable</li>
+            <li>Travel case</li>
+            <li>User manual</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section testimonials container">
+      <h2>Customer Testimonials</h2>
+      <div class="test-grid">
+        <blockquote class="test">
+          <p>"Love this little machine — perfect for camping trips!"</p>
+          <footer>— Priya K.</footer>
+        </blockquote>
+        <blockquote class="test">
+          <p>"Easy to use and the brew quality is excellent."</p>
+          <footer>— Ankit R.</footer>
+        </blockquote>
+        <blockquote class="test">
+          <p>"Compact, stylish, and fast. My daily travel companion."</p>
+          <footer>— Meera S.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq container">
+      <h2>FAQ</h2>
+      <div class="accordion">
+        <details>
+          <summary>How long does a single charge last?</summary>
+          <p>About 10 brews on average depending on usage and settings.</p>
+        </details>
+        <details>
+          <summary>Can I use pods or capsules?</summary>
+          <p>This model supports ground coffee and a reusable mesh filter only.</p>
+        </details>
+        <details>
+          <summary>Is it travel-friendly?</summary>
+          <p>Yes — includes a travel case for protection and easy packing.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact container">
+      <h2>Contact / Inquiry</h2>
+      <form id="contactForm" class="contact-form" onsubmit="handleContact(event)">
+        <div class="form-row">
+          <label>Name <input type="text" name="name" required></label>
+          <label>Email <input type="email" name="email" required></label>
+        </div>
+        <label>Message <textarea name="message" rows="4" required></textarea></label>
+        <div class="form-row form-actions">
+          <label class="newsletter"><input type="checkbox" name="newsletter"> Subscribe to newsletter</label>
+          <button class="btn primary" type="submit">Send Inquiry</button>
+        </div>
+        <p class="form-note">This form is non-functional demo — it shows front-end validation and feedback only.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>NovaBrew</h3>
+        <p>Crafting great coffee — wherever life takes you.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="socials">
+          <a aria-label="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a aria-label="Twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a aria-label="Facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">© 2025 NovaBrew — All rights reserved</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
